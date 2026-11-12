@@ -1,0 +1,211 @@
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  padding: 20px 24px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+
+.header-info {
+  min-width: 0;
+}
+
+.header-title {
+  color: var(--primary);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.header-subtitle {
+  margin-top: 5px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.header-university {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.header-icon-btn {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+
+  color: var(--primary);
+}
+
+.header-icon-btn:hover {
+  background: #e7f1eb;
+}
+
+/* Admin Profile */
+
+.admin-profile {
+  position: relative;
+}
+
+.admin-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 7px 10px;
+
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+}
+
+.admin-button:hover {
+  background: #f1f5f9;
+}
+
+.admin-avatar {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #bddeca;
+  color: var(--primary);
+  border-radius: 50%;
+}
+
+.admin-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.admin-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-role {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.admin-chevron {
+  transition: transform 0.2s ease;
+}
+
+.admin-chevron.rotate {
+  transform: rotate(180deg);
+}
+
+
+.admin-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+
+  width: 200px;
+  padding: 7px;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  padding: 11px 12px;
+
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+
+  font-size: 13px;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.dropdown-item:hover {
+  background: #f1f5f9;
+}
+
+.dropdown-divider {
+  height: 1px;
+  margin: 6px 0;
+  background: var(--border);
+}
+
+.dropdown-item.logout {
+  color: #dc2626;
+}
+
+.dropdown-item.logout:hover {
+  background: #fef2f2;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .header-title {
+    font-size: 13px;
+  }
+
+  .header-subtitle {
+    font-size: 10px;
+  }
+
+  .header-university,
+  .admin-info,
+  .admin-chevron {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,520 @@
+.lq-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.lq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.lq-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 4px 0;
+}
+
+.lq-header p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.lq-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lq-primary-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #166534;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lq-primary-btn:hover {
+  background: #14532d;
+}
+
+.lq-reset-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.lq-reset-btn:hover {
+  background: #e5e7eb;
+}
+
+/* Event Cash Advance Cards */
+.lq-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.lq-event-card {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lq-event-card:hover {
+  border-color: #86efac;
+}
+
+.lq-event-card.active {
+  border-color: #166534;
+  background: #f0fdf4;
+}
+
+.lq-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lq-org-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.lq-card-badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lq-event-card h3 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 2px 0;
+}
+
+.lq-org-sub {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin: 0 0 12px 0;
+}
+
+.lq-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.lq-progress-fill {
+  height: 100%;
+  background: #166534;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.lq-card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lq-card-footer small {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.lq-card-footer p {
+  margin: 2px 0 0 0;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+/* Status Pills */
+.lq-status-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.lq-status-pill.lg {
+  font-size: 0.85rem;
+  padding: 5px 12px;
+}
+
+.lq-status-pill.liquidated {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.lq-status-pill.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* KPI Grid */
+.lq-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.lq-kpi-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.lq-kpi-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.lq-kpi-card h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #111827;
+}
+
+.lq-kpi-card small {
+  color: #6b7280;
+  font-size: 0.78rem;
+}
+
+.lq-kpi-val-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lq-status-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 4px 0 8px 0;
+}
+
+.lq-toggle-status-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lq-toggle-status-btn:hover {
+  background: #e5e7eb;
+}
+
+.lq-inline-edit-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.lq-inline-edit-box input {
+  width: 130px;
+  padding: 6px 8px;
+  border: 1px solid #166534;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Panels & Forms */
+.lq-panel {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.lq-add-panel {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.lq-panel h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 16px 0;
+}
+
+.lq-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 14px;
+  align-items: end;
+}
+
+.lq-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lq-field label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.lq-field input,
+.lq-field select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: #ffffff;
+}
+
+.lq-field input:focus,
+.lq-field select:focus {
+  outline: none;
+  border-color: #166534;
+}
+
+.lq-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #166534;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  height: 41px;
+}
+
+.lq-submit-btn:hover {
+  background: #14532d;
+}
+
+/* Table */
+.lq-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.lq-table-header h3 {
+  margin: 0;
+}
+
+.lq-table-header small {
+  color: #6b7280;
+}
+
+.lq-table-wrapper {
+  overflow-x: auto;
+}
+
+.lq-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.lq-table th {
+  background: #f9fafb;
+  color: #4b5563;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.lq-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.lq-empty-row {
+  text-align: center;
+  color: #6b7280;
+  padding: 24px !important;
+}
+
+.lq-cat-tag {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Buttons & Inline Inputs */
+.lq-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.lq-icon-btn {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+  color: #4b5563;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lq-icon-btn.danger:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.lq-inline-input,
+.lq-inline-select {
+  padding: 6px 8px;
+  border: 1px solid #166534;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  width: 160px;
+}
+
+.lq-inline-input.sm {
+  width: 95px;
+}
+
+/* Utilities */
+.font-mono { font-family: monospace; font-weight: 600; color: #374151; }
+.font-semibold { font-weight: 600; }
+.text-right { text-align: right; }
+.text-green { color: #166534 !important; }
+.text-amber { color: #d97706 !important; }
+.text-red { color: #dc2626 !important; }
+.icon-blue { color: #2563eb; }
+.icon-green { color: #16a34a; }
+.icon-amber { color: #d97706; }
+.icon-red { color: #dc2626; }
+.icon-purple { color: #7c3aed; }
+
+/* Inline Event Card Editor */
+.lq-card-edit-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.lq-card-edit-input,
+.lq-card-edit-code {
+  padding: 6px 10px;
+  border: 1px solid #166534;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #111827;
+  background: #ffffff;
+}
+
+.lq-card-edit-input.sub {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.lq-card-edit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.lq-card-edit-code {
+  width: 110px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.lq-icon-btn:hover {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+/* Action Buttons (Standalone for Liquidation) */
+.btn-edit-sm,
+.btn-delete-sm,
+.btn-save-sm,
+.btn-cancel-sm {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-edit-sm { background: #eff6ff; color: #2563eb; }
+.btn-delete-sm { background: #fef2f2; color: #dc2626; }
+.btn-save-sm { background: #dcfce7; color: #166534; }
+.btn-cancel-sm { background: #f3f4f6; color: #4b5563; }

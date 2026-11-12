@@ -1,0 +1,505 @@
+
+
+.dashboard-page {
+  width: 100%;
+  min-width: 0;
+}
+
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.welcome h2 {
+  color: var(--primary, #123c2b);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.welcome p {
+  color: var(--text-secondary, #777);
+  font-size: 14px;
+}
+
+.dashboard-period {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dashboard-period label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.dashboard-period select {
+  min-width: 160px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 13px;
+}
+
+
+.dashboard-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.dashboard-stat-card {
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #287653;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-stat-card.green {
+  border-left-color: #15803d;
+}
+
+.dashboard-stat-card.blue {
+  border-left-color: #2563eb;
+}
+
+.dashboard-stat-card.orange {
+  border-left-color: #ea580c;
+}
+
+.dashboard-stat-card.purple {
+  border-left-color: #7c3aed;
+}
+
+.dashboard-stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.dashboard-stat-top p {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.dashboard-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #e7f1eb;
+  color: #287653;
+  border-radius: 9px;
+}
+
+.dashboard-stat-card.blue .dashboard-stat-icon {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.dashboard-stat-card.orange .dashboard-stat-icon {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.dashboard-stat-card.purple .dashboard-stat-icon {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.dashboard-stat-card h3 {
+  color: #123c2b;
+  font-size: 23px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-stat-card small {
+  display: block;
+  margin-top: 10px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
+  align-items: start;
+}
+
+/* Panels */
+
+.dashboard-panel {
+  min-width: 0;
+  padding: 22px;
+  margin-bottom: 25px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-grid > .dashboard-panel {
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.dashboard-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.dashboard-panel-header h3 {
+  font-size: 17px;
+  color: #123c2b;
+  margin-bottom: 6px;
+}
+
+.dashboard-panel-header p {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* Financial Overview */
+
+.financial-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.overview-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.overview-label span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.overview-label strong {
+  color: #334155;
+  font-size: 13px;
+}
+
+.overview-progress {
+  height: 10px;
+  width: 100%;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.overview-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+}
+
+.overview-progress-fill.income {
+  background: #16a34a;
+}
+
+.overview-progress-fill.expense {
+  background: #f97316;
+}
+
+.overview-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+  background: #e7f1eb;
+  border-radius: 9px;
+  color: #166534;
+}
+
+.overview-balance p {
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.overview-balance h3 {
+  font-size: 22px;
+  overflow-wrap: anywhere;
+}
+
+/* Approvals */
+
+.dashboard-count {
+  padding: 6px 10px;
+  border-radius: 7px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dashboard-approval-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-approval-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.dashboard-approval-item:last-child {
+  border-bottom: none;
+}
+
+.approval-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 8px;
+}
+
+.approval-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.approval-details h4 {
+  color: #334155;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.approval-details p {
+  margin: 5px 0;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.approval-details strong {
+  color: #123c2b;
+  font-size: 12px;
+}
+
+.dashboard-panel-note {
+  margin-top: 15px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+/* Transaction Table */
+
+.dashboard-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.dashboard-table {
+  width: 100%;
+  min-width: 750px;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  font-size: 12px;
+}
+
+.dashboard-table th {
+  background: #e7f1eb;
+  color: #123c2b;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.dashboard-table td {
+  color: #475569;
+}
+
+.dashboard-table tbody tr:hover {
+  background: #f8faf9;
+}
+
+.dashboard-amount {
+  font-weight: 600;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Transaction Type */
+
+.transaction-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.transaction-type.income {
+  color: #15803d;
+}
+
+.transaction-type.expense {
+  color: #ea580c;
+}
+
+/* Status Badges */
+
+.dashboard-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dashboard-status.pending {
+  color: #92400e;
+  background: #fef3c7;
+}
+
+.dashboard-status.approved,
+.dashboard-status.completed {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.dashboard-status.rejected {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+/* Announcements */
+
+.dashboard-announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-announcement {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 15px;
+  background: #f8faf9;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.announcement-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #e7f1eb;
+  color: #287653;
+}
+
+.dashboard-announcement h4 {
+  color: #123c2b;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.dashboard-announcement p {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.dashboard-announcement small {
+  display: block;
+  margin-top: 8px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .dashboard-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .welcome h2 {
+    font-size: 20px;
+  }
+
+  .dashboard-period,
+  .dashboard-period select {
+    width: 100%;
+  }
+
+  .dashboard-panel {
+    padding: 16px;
+  }
+
+  .dashboard-stat-card {
+    padding: 18px;
+  }
+
+  .overview-balance h3 {
+    font-size: 18px;
+  }
+
+  .dashboard-approval-item {
+    flex-wrap: wrap;
+  }
+}

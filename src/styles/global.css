@@ -1,0 +1,46 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, sans-serif;
+
+  --primary: #123c2b;
+  --primary-light: #287653;
+
+  --background: #f4f6f9;
+  --surface: #ffffff;
+
+  --text-primary: #41413b;
+  --text-secondary: #777777;
+
+  --border: #e5e7eb;
+
+  --sidebar-width: 240px;
+  --sidebar-mobile-width: 75px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
